@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy 2nd Love Anniversary | Suman & Ankita ❤️</title>
+  <meta name="description" content="A romantic celebration of 2 years of love, memories, and togetherness for Suman & Ankita.">
+  
+  <!-- Google Fonts: Elegant Serifs, Romantic Handwritten, and Modern Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Ambient Animated Background Canvas -->
+  <canvas id="ambient-canvas" aria-hidden="true"></canvas>
+
+  <!-- Interactive Cursor Follower Glow (Desktop only) -->
+  <div class="cursor-glow" id="cursor-glow" aria-hidden="true"></div>
+
+  <!-- Background Music Player Controller -->
+  <!--
+    ===================================================================
+    MUSIC INSTRUCTIONS:
+    Place your romantic song file at 'audio/our-song.mp3'.
+    If you don't have an mp3 file yet, the player includes an automatic,
+    delicate romantic chime synthesizer so Ankita always hears music!
+    ===================================================================
+  -->
+  <div class="music-pill-container" id="music-pill-container">
+    <audio id="bg-audio" preload="auto" loop>
+      <source src="audio/our-song.mp3" type="audio/mpeg">
+    </audio>
+    <button id="music-btn" class="music-pill-btn" aria-label="Play or pause romantic song">
+      <span class="music-icon" id="music-icon">🎵</span>
+      <span class="music-label" id="music-label">Play Our Song</span>
+      <span class="sound-wave" id="sound-wave" aria-hidden="true">
+        <span></span><span></span><span></span><span></span>
+      </span>
+    </button>
+  </div>
+
+  <!-- Main Content Wrapper -->
+  <main id="main-content">
+
+    <!-- ==========================================
+         SECTION 1: ROMANTIC LANDING SCREEN (HERO)
+         ========================================== -->
+    <section id="hero" class="hero-section">
+      <div class="hero-content">
+        <div class="hero-badge reveal-fade">
+          <span class="sparkle">✨</span> 2 Years of Togetherness <span class="sparkle">✨</span>
+        </div>
+
+        <h1 class="hero-title reveal-fade">
+          Happy 2nd Love Anniversary <span class="heart-pulse">❤️</span>
+        </h1>
+
+        <div class="couple-names-wrap reveal-fade">
+          <span class="couple-name">Suman</span>
+          <span class="names-heart">❤️</span>
+          <span class="couple-name">Ankita</span>
+        </div>
+
+        <p class="hero-quote reveal-fade">
+          &ldquo;Two years of love, countless memories, and a lifetime still waiting for us.&rdquo;
+        </p>
+
+        <div class="hero-actions reveal-fade">
+          <button id="open-story-btn" class="btn btn-primary btn-glow" aria-label="Scroll to our love story">
+            <span>Open Our Story</span>
+            <span class="btn-icon">❤️</span>
+          </button>
+        </div>
+
+        <div class="hero-footer-hint reveal-fade">
+          <p class="hint-text">Scroll down, Ankita... I made this just for you 💕</p>
+          <div class="scroll-arrow" aria-hidden="true">
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 2: OUR LOVE STORY (TIMELINE)
+         ========================================== -->
+    <section id="story" class="section timeline-section">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-tag">Our Journey</span>
+          <h2 class="section-title">Two Years. One Beautiful Story. ❤️</h2>
+          <div class="title-divider"><span>❦</span></div>
+          <p class="section-desc">Every day with you has been a page in my favorite book.</p>
+        </div>
+
+        <div class="timeline-wrapper">
+          <div class="timeline-line" aria-hidden="true"></div>
+
+          <!-- Timeline Item 1 -->
+          <article class="timeline-item reveal-on-scroll left">
+            <div class="timeline-marker">
+              <span class="timeline-icon">💗</span>
+            </div>
+            <div class="timeline-card glass-card">
+              <div class="timeline-card-header">
+                <span class="timeline-badge">Year 1</span>
+                <span class="timeline-date">The Beginning of Forever</span>
+              </div>
+              <p class="timeline-text">
+                &ldquo;Our first year was filled with new memories, silly conversations, smiles, little fights, and moments that slowly became unforgettable.&rdquo;
+              </p>
+              <div class="timeline-decor">✨ First dates, endless late-night talks & sweet butterflies ✨</div>
+            </div>
+          </article>
+
+          <!-- Timeline Item 2 -->
+          <article class="timeline-item reveal-on-scroll right">
+            <div class="timeline-marker">
+              <span class="timeline-icon">💗</span>
+            </div>
+            <div class="timeline-card glass-card">
+              <div class="timeline-card-header">
+                <span class="timeline-badge">Year 2</span>
+                <span class="timeline-date">Growing Stronger Together</span>
+              </div>
+              <p class="timeline-text">
+                &ldquo;Another year passed, but somehow my love for you only became stronger.&rdquo;
+              </p>
+              <div class="timeline-decor">🌟 Understanding without speaking, deepening trust & pure companionship 🌟</div>
+            </div>
+          </article>
+
+          <!-- Timeline Item 3 -->
+          <article class="timeline-item reveal-on-scroll left">
+            <div class="timeline-marker milestone">
+              <span class="timeline-icon">💖</span>
+            </div>
+            <div class="timeline-card glass-card highlight-card">
+              <div class="timeline-card-header">
+                <span class="timeline-badge highlight-badge">Today</span>
+                <span class="timeline-date">Happy 2nd Anniversary</span>
+              </div>
+              <p class="timeline-text">
+                &ldquo;Today we celebrate us — everything we&apos;ve been through and everything that&apos;s still waiting for us.&rdquo;
+              </p>
+              <div class="timeline-decor">🥂 730+ days of choosing you, every single morning 🥂</div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 3: MEMORY GALLERY
+         ========================================== -->
+    <section id="gallery" class="section gallery-section">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-tag">Captured Feelings</span>
+          <h2 class="section-title">Our Little Moments 📸</h2>
+          <div class="title-divider"><span>❦</span></div>
+          <p class="section-desc">Click on any photo to take a closer trip down memory lane.</p>
+        </div>
+
+        <!--
+          ===================================================================
+          REAL COUPLE PHOTOS (SUMAN & ANKITA):
+          Photos are loaded from:
+            images/couple1.jpg
+            images/couple2.jpg
+            images/couple3.jpg
+            images/couple4.jpg
+            images/couple5.jpg
+            images/couple6.jpg
+          ===================================================================
+        -->
+        <div class="gallery-grid">
+
+          <!-- Memory 1 -->
+          <div class="memory-card polaroid-card reveal-on-scroll" data-index="0" data-caption="That smile I could never forget ❤️">
+            <div class="tape-strip" aria-hidden="true"></div>
+            <div class="polaroid-inner">
+              <div class="img-wrapper">
+                <img src="images/couple1.jpg" alt="Suman and Ankita smiling together" loading="lazy">
+                <div class="img-overlay">
+                  <span class="zoom-hint">🔍 Tap to view</span>
+                </div>
+              </div>
+              <div class="polaroid-caption">
+                <p>That smile I could never forget ❤️</p>
+                <span class="card-date">Chapter I</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Memory 2 -->
+          <div class="memory-card polaroid-card reveal-on-scroll" data-index="1" data-caption="One of my favorite memories with you.">
+            <div class="tape-strip" aria-hidden="true"></div>
+            <div class="polaroid-inner">
+              <div class="img-wrapper">
+                <img src="images/couple2.jpg" alt="Ankita with a bouquet of sunflowers" loading="lazy">
+                <div class="img-overlay">
+                  <span class="zoom-hint">🔍 Tap to view</span>
+                </div>
+              </div>
+              <div class="polaroid-caption">
+                <p>One of my favorite memories with you.</p>
+                <span class="card-date">Chapter II</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Memory 3 -->
+          <div class="memory-card polaroid-card reveal-on-scroll" data-index="2" data-caption="Just us. That's enough.">
+            <div class="tape-strip" aria-hidden="true"></div>
+            <div class="polaroid-inner">
+              <div class="img-wrapper">
+                <img src="images/couple3.jpg" alt="Suman and Ankita among flowers" loading="lazy">
+                <div class="img-overlay">
+                  <span class="zoom-hint">🔍 Tap to view</span>
+                </div>
+              </div>
+              <div class="polaroid-caption">
+                <p>Just us. That&apos;s enough.</p>
+                <span class="card-date">Chapter III</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Memory 4 -->
+          <div class="memory-card polaroid-card reveal-on-scroll" data-index="3" data-caption="Every moment with you feels like magic ✨">
+            <div class="tape-strip" aria-hidden="true"></div>
+            <div class="polaroid-inner">
+              <div class="img-wrapper">
+                <img src="images/couple4.jpg" alt="Suman and Ankita sweet moment together" loading="lazy">
+                <div class="img-overlay">
+                  <span class="zoom-hint">🔍 Tap to view</span>
+                </div>
+              </div>
+              <div class="polaroid-caption">
+                <p>Every moment with you feels like magic ✨</p>
+                <span class="card-date">Chapter IV</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Memory 5 -->
+          <div class="memory-card polaroid-card reveal-on-scroll" data-index="4" data-caption="Holding your hand and never letting go 💑">
+            <div class="tape-strip" aria-hidden="true"></div>
+            <div class="polaroid-inner">
+              <div class="img-wrapper">
+                <img src="images/couple5.jpg" alt="Suman and Ankita standing together on a flower petal path" loading="lazy">
+                <div class="img-overlay">
+                  <span class="zoom-hint">🔍 Tap to view</span>
+                </div>
+              </div>
+              <div class="polaroid-caption">
+                <p>Holding your hand and never letting go 💑</p>
+                <span class="card-date">Chapter V</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Memory 6 -->
+          <div class="memory-card polaroid-card reveal-on-scroll" data-index="5" data-caption="The beginning of our forever 💕">
+            <div class="tape-strip" aria-hidden="true"></div>
+            <div class="polaroid-inner">
+              <div class="img-wrapper">
+                <img src="images/couple6.jpg" alt="Suman proposing to Ankita under a flowering arch" loading="lazy">
+                <div class="img-overlay">
+                  <span class="zoom-hint">🔍 Tap to view</span>
+                </div>
+              </div>
+              <div class="polaroid-caption">
+                <p>The beginning of our forever 💕</p>
+                <span class="card-date">Chapter VI</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Fullscreen Image Modal / Lightbox -->
+    <div id="image-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-caption" hidden>
+      <div class="modal-backdrop" id="modal-backdrop"></div>
+      <div class="modal-content glass-card">
+        <button id="modal-close-btn" class="modal-close-btn" aria-label="Close photo preview">✕</button>
+        <button id="modal-prev-btn" class="modal-nav-btn prev" aria-label="Previous photo">‹</button>
+        <div class="modal-image-container">
+          <img id="modal-image" src="" alt="Enlarged photo memory">
+        </div>
+        <button id="modal-next-btn" class="modal-nav-btn next" aria-label="Next photo">›</button>
+        <div class="modal-caption-wrap">
+          <p id="modal-caption" class="modal-caption"></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==========================================
+         SECTION 4: LOVE LETTER
+         ========================================== -->
+    <section id="letter" class="section letter-section">
+      <div class="container letter-container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-tag">Straight From The Heart</span>
+          <h2 class="section-title">A Letter For Ankita 💌</h2>
+          <div class="title-divider"><span>❦</span></div>
+          <p class="section-desc">Because some feelings are best written with pure honesty.</p>
+        </div>
+
+        <div class="letter-card-wrapper reveal-on-scroll">
+          <div class="letter-paper">
+            <div class="wax-seal" aria-hidden="true">
+              <span>S❤️A</span>
+            </div>
+
+            <div class="letter-header">
+              <span class="letter-badge">2nd Anniversary Edition</span>
+              <span class="letter-date">September 25</span>
+            </div>
+
+            <!-- Letter Content Container with Typewriter Target -->
+            <div class="letter-content" id="letter-content">
+              <div id="typewriter-text" class="typewriter-body"></div>
+              <span id="typewriter-cursor" class="typewriter-cursor" aria-hidden="true">❤️</span>
+            </div>
+
+            <div class="letter-controls">
+              <button id="replay-letter-btn" class="btn btn-outline-soft" aria-label="Replay letter animation">
+                <span>Replay Letter 📜</span>
+              </button>
+              <button id="skip-letter-btn" class="btn btn-outline-soft" aria-label="Show full letter immediately">
+                <span>Show Full Letter ⚡</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 5: "WHY I LOVE YOU"
+         ========================================== -->
+    <section id="reasons" class="section reasons-section">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-tag">A Thousand Little Things</span>
+          <h2 class="section-title">Reasons I Love You ❤️</h2>
+          <div class="title-divider"><span>❦</span></div>
+          <p class="section-desc">Every single day gives me a brand new reason to fall for you.</p>
+        </div>
+
+        <div class="reasons-display-wrap">
+          <!-- Active Card Showcase -->
+          <div class="active-reason-card glass-card" id="active-reason-card">
+            <div class="reason-sparkle-decor" aria-hidden="true">💖</div>
+            <div class="reason-number" id="reason-number">Reason #1</div>
+            <h3 class="reason-title" id="reason-title">Your Smile 😊</h3>
+            <p class="reason-description" id="reason-description">
+              The kind of smile that instantly lights up my entire world, melts away every worry, and makes me fall in love all over again.
+            </p>
+            <div class="reason-heart-float" aria-hidden="true">✨</div>
+          </div>
+
+          <!-- Reason Button -->
+          <div class="reason-actions">
+            <button id="next-reason-btn" class="btn btn-primary btn-glow" aria-label="Show another reason">
+              <span>Show Me Another Reason ❤️</span>
+            </button>
+          </div>
+
+          <!-- Mini Pills Indicator of All Reasons -->
+          <div class="reasons-pills-row" id="reasons-pills-row" aria-label="Clickable reasons list">
+            <!-- Dynamically populated via JS -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 6: OUR LOVE COUNTER
+         ========================================== -->
+    <section id="counter" class="section counter-section">
+      <div class="container">
+        <div class="section-header reveal-on-scroll">
+          <span class="section-tag">Cherishing Every Beat</span>
+          <h2 class="section-title">Time With You ❤️</h2>
+          <div class="title-divider"><span>❦</span></div>
+          <p class="section-desc">Counting every precious second since our beautiful journey began.</p>
+        </div>
+
+        <div class="counter-grid">
+          <!-- Years -->
+          <div class="counter-card glass-card reveal-on-scroll">
+            <div class="counter-number-wrap">
+              <span class="counter-val" id="count-years">0</span>
+            </div>
+            <span class="counter-label">Years</span>
+          </div>
+
+          <!-- Months -->
+          <div class="counter-card glass-card reveal-on-scroll">
+            <div class="counter-number-wrap">
+              <span class="counter-val" id="count-months">0</span>
+            </div>
+            <span class="counter-label">Months</span>
+          </div>
+
+          <!-- Days -->
+          <div class="counter-card glass-card reveal-on-scroll">
+            <div class="counter-number-wrap">
+              <span class="counter-val" id="count-days">0</span>
+            </div>
+            <span class="counter-label">Days</span>
+          </div>
+
+          <!-- Hours -->
+          <div class="counter-card glass-card reveal-on-scroll">
+            <div class="counter-number-wrap">
+              <span class="counter-val" id="count-hours">00</span>
+            </div>
+            <span class="counter-label">Hours</span>
+          </div>
+
+          <!-- Minutes -->
+          <div class="counter-card glass-card reveal-on-scroll">
+            <div class="counter-number-wrap">
+              <span class="counter-val" id="count-minutes">00</span>
+            </div>
+            <span class="counter-label">Minutes</span>
+          </div>
+
+          <!-- Seconds -->
+          <div class="counter-card glass-card highlight-counter reveal-on-scroll">
+            <div class="counter-number-wrap">
+              <span class="counter-val" id="count-seconds">00</span>
+            </div>
+            <span class="counter-label">Seconds</span>
+          </div>
+        </div>
+
+        <div class="counter-footer-message reveal-on-scroll">
+          <p class="special-seconds-text">&ldquo;And every second with you is special. ❤️&rdquo;</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 7: A LITTLE QUESTION
+         ========================================== -->
+    <section id="question" class="section question-section">
+      <div class="container question-container">
+        <div class="question-card glass-card reveal-on-scroll">
+          <div class="question-halo" aria-hidden="true"></div>
+          <div class="question-icon">💍</div>
+          
+          <h2 class="question-title">
+            Ankita, will you keep making beautiful memories with me? ❤️
+          </h2>
+          
+          <p class="question-subtitle">
+            There is no one else I would rather share this life with.
+          </p>
+
+          <div class="question-buttons" id="question-buttons-area">
+            <button id="btn-yes" class="btn btn-love-yes">
+              <span>YES ❤️</span>
+            </button>
+            <button id="btn-of-course" class="btn btn-love-course">
+              <span>OF COURSE 😘</span>
+            </button>
+          </div>
+
+          <!-- Celebration Response (Revealed on click) -->
+          <div id="question-response" class="question-response" hidden>
+            <div class="response-heart-icon">💖</div>
+            <h3 class="response-title">Yayyy! ❤️</h3>
+            <p class="response-msg">Then let&apos;s make many more memories together.</p>
+            <div class="response-badge">✨ Forever &amp; Always Confirmed ✨</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 8: SPECIAL SURPRISE
+         ========================================== -->
+    <section id="surprise" class="section surprise-section">
+      <div class="container surprise-container reveal-on-scroll">
+        <div class="surprise-box glass-card">
+          <div class="surprise-sparkle-icon">✨🎁✨</div>
+          <h2 class="surprise-heading">I Have One More Thing...</h2>
+          <p class="surprise-desc">Before we turn the page into our third year, touch the gift below.</p>
+          
+          <button id="surprise-trigger-btn" class="btn btn-surprise btn-glow">
+            <span class="gift-icon">🎁</span>
+            <span class="btn-text">One Last Surprise 🎁</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cinematic Surprise Fullscreen Overlay -->
+    <div id="surprise-overlay" class="surprise-overlay" role="dialog" aria-modal="true" hidden>
+      <div class="surprise-backdrop"></div>
+      <canvas id="surprise-canvas" class="surprise-canvas"></canvas>
+      
+      <div class="surprise-modal-content">
+        <button id="surprise-close-btn" class="surprise-close-btn" aria-label="Close surprise">✕ Return</button>
+        
+        <!-- Glowing Beating Heart -->
+        <div class="big-glowing-heart-wrap" id="surprise-heart-wrap">
+          <div class="big-glowing-heart">❤️</div>
+          <div class="heart-glow-rings">
+            <span></span><span></span><span></span>
+          </div>
+        </div>
+
+        <!-- Staggered Cinematic Text Sequence -->
+        <div class="cinematic-text-sequence" id="cinematic-text-sequence">
+          <div class="cinema-step cinema-name" id="cinema-step-1">Ankita ❤️</div>
+          <div class="cinema-step cinema-quote" id="cinema-step-2">&ldquo;You&apos;re one of the most beautiful chapters of my life.&rdquo;</div>
+          <div class="cinema-step cinema-anniversary" id="cinema-step-3">Happy 2nd Love Anniversary ❤️</div>
+          <div class="cinema-step cinema-couple" id="cinema-step-4">Suman ❤️ Ankita</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==========================================
+         SECTION 9: FINAL SCREEN
+         ========================================== -->
+    <section id="final-screen" class="section final-section">
+      <div class="container final-container reveal-on-scroll">
+        <div class="final-card glass-card">
+          <div class="infinity-symbol">∞</div>
+          <h2 class="final-title">Happy 2nd Anniversary, Ankita ❤️</h2>
+          
+          <div class="final-lines">
+            <p class="final-line-1">2 years down...</p>
+            <p class="final-line-2">and countless beautiful memories to go. ✨</p>
+          </div>
+
+          <div class="final-names-badge">
+            <span>Suman</span>
+            <span class="final-heart">❤️</span>
+            <span>Ankita</span>
+          </div>
+
+          <p class="final-forever-quote">
+            &ldquo;Forever isn&apos;t long enough when I&apos;m with you. ❤️&rdquo;
+          </p>
+
+          <div class="stars-cluster" aria-hidden="true">
+            <span>✨</span><span>🌸</span><span>💖</span><span>🌸</span><span>✨</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================
+       FOOTER: FINAL PERSONAL TOUCH
+       ========================================== -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p class="footer-dedication">
+        Made with <span class="beating-heart" aria-label="love">❤️</span> by <strong>Suman</strong>, especially for <strong>Ankita</strong>.
+      </p>
+      <p class="footer-anniversary-sub">2nd Love Anniversary &bull; September 25</p>
+    </div>
+  </footer>
+
+  <!-- Confetti Canvas Overlay for Celebrations -->
+  <canvas id="confetti-canvas" class="confetti-canvas" aria-hidden="true"></canvas>
+
+  <!-- Main Vanilla JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
